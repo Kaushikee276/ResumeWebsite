@@ -1,0 +1,106 @@
+/* Global Styles */
+:root {
+    --primary-color: #2E1F1F; /* Deep brown */
+    --secondary-color: #FDFCFB; /* Off-white */
+    --accent-color: #2A9D8F; /* Deep teal */
+    --background-color: #EAEAEA; /* Soft gray */
+    --text-color: #333333; /* Neutral dark gray */
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  header {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1.5rem 0;
+  }
+  
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 1rem;
+  }
+  
+  nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: var(--accent-color);
+  }
+  
+  section {
+    background-color: var(--secondary-color);
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  section h2 {
+    text-align: center;
+    color: var(--primary-color);
+  }
+  
+  section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  section ul li {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+  
+  .position {
+    margin: 1rem 0;
+    border-bottom: 1px solid var(--accent-color);
+    padding-bottom: 1rem;
+  }
+  
+  .position h3 {
+    color: var(--accent-color);
+    font-weight: bold;
+  }
+  
+  .project {
+    border: 1px solid var(--accent-color);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+  }
+  
+  footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem 0;
+    font-size: 0.9rem;
+  }
