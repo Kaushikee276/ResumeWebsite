@@ -1,102 +1,100 @@
-/* Body and Typography */
+
+:root {
+  --primary-color: #2E1F1F; /* Deep brown */
+  --secondary-color: #FDFCFB; /* Off-white */
+  --accent-color: #2A9D8F; /* Deep teal */
+  --background-color: #EAEAEA; /* Soft gray */
+  --text-color: #333333; /* Neutral dark gray */
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #F8F9FA; 
-  color: #333; 
+  background-color: var(--background-color);
+  color: var(--text-color);
   margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 1.5rem 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+section {
+  background-color: var(--secondary-color);
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  text-align: center;
+  color: var(--primary-color);
+}
+
+section ul {
+  list-style: none;
   padding: 0;
 }
 
-/* Section Headings */
-h2 {
-  color: #2E1F1F; 
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-/* List Styling */
-.list-group-item {
-  font-size: 1.1rem;
-  background-color: #fff; 
-  border: 1px solid #DDD; 
-  margin-bottom: 0.5rem;
-}
-
-/* Card Styling for Projects Section */
-.card {
-  margin-top: 1rem;
-  border: 1px solid #2A9D8F; 
-  border-radius: 8px; 
-}
-
-.card-title {
-  color: #2E1F1F;
-}
-
-.card-text {
+section ul li {
+  margin: 0.5rem 0;
   font-size: 1rem;
-  line-height: 1.5;
 }
 
-/* Buttons */
 .btn-primary {
-  background-color: #2A9D8F; 
+  background-color: var(--accent-color);
   border: none;
-  font-size: 1rem;
+  color: var(--secondary-color);
 }
 
 .btn-primary:hover {
-  background-color: #1E7F6C; 
+  background-color: #1E7F6C; /* Darker teal */
 }
 
 .btn-secondary {
-  background-color: #6C757D; 
+  background-color: #6C757D; /* Bootstrap gray */
   border: none;
-  font-size: 1rem;
+  color: var(--secondary-color);
 }
 
 .btn-secondary:hover {
-  background-color: #5A6268; 
+  background-color: #5A6268; /* Darker gray */
 }
 
-/* Responsive Grid for Sections */
-.container {
-  max-width: 1100px; 
-  margin: auto; 
-}
-
-.row > div {
-  margin-bottom: 1rem; 
-}
-
-/* Footer */
 footer {
-  background-color: #2E1F1F; 
-  color: #FDFCFB; 
   text-align: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   padding: 1rem 0;
   font-size: 0.9rem;
-}
-
-/* Navbar Customizations */
-.navbar-brand {
-  font-weight: bold;
-}
-
-.nav-item .nav-link {
-  color: #FDFCFB; 
-  font-weight: 500;
-}
-
-.nav-item .nav-link:hover {
-  color: #2A9D8F; 
-}
-
-/* Section Spacing */
-section {
-  margin: 2rem 0; 
-  padding: 1.5rem; 
-  background-color: #FFFFFF; 
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
