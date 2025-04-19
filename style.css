@@ -1,19 +1,32 @@
-/* Custom Styles */
+/* Body and Typography */
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #F8F9FA; 
+  color: #333; 
+  margin: 0;
+  padding: 0;
 }
 
+/* Section Headings */
 h2 {
-  color: #2E1F1F;
+  color: #2E1F1F; 
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
+/* List Styling */
 .list-group-item {
   font-size: 1.1rem;
+  background-color: #fff; 
+  border: 1px solid #DDD; 
+  margin-bottom: 0.5rem;
 }
 
+/* Card Styling for Projects Section */
 .card {
   margin-top: 1rem;
-  border: 1px solid #2A9D8F;
+  border: 1px solid #2A9D8F; 
+  border-radius: 8px; 
 }
 
 .card-title {
@@ -22,4 +35,68 @@ h2 {
 
 .card-text {
   font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #2A9D8F; 
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-primary:hover {
+  background-color: #1E7F6C; 
+}
+
+.btn-secondary {
+  background-color: #6C757D; 
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-secondary:hover {
+  background-color: #5A6268; 
+}
+
+/* Responsive Grid for Sections */
+.container {
+  max-width: 1100px; 
+  margin: auto; 
+}
+
+.row > div {
+  margin-bottom: 1rem; 
+}
+
+/* Footer */
+footer {
+  background-color: #2E1F1F; 
+  color: #FDFCFB; 
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* Navbar Customizations */
+.navbar-brand {
+  font-weight: bold;
+}
+
+.nav-item .nav-link {
+  color: #FDFCFB; 
+  font-weight: 500;
+}
+
+.nav-item .nav-link:hover {
+  color: #2A9D8F; 
+}
+
+/* Section Spacing */
+section {
+  margin: 2rem 0; 
+  padding: 1.5rem; 
+  background-color: #FFFFFF; 
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
